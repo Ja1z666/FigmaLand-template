@@ -95,7 +95,8 @@ body{
 .hero{
     padding-top: 192px;
     background: linear-gradient(230.95deg, #CB1AE8 -0.37%, #37BDA6 100%);
-    min-height: 1342px;
+    min-height: 100vh;
+    padding-bottom: 25px;
 }
 
 .button{
@@ -195,6 +196,7 @@ h2{
     display: flex;
     flex-wrap: wrap;
     gap: 1.7rem;
+    justify-content: center;
 }
 
 .advantage-list .title{
@@ -369,6 +371,7 @@ h3{
     display: flex;
     flex-wrap: wrap;
     gap: 1.7rem;
+    justify-content: center;
 }
 
 .sub-box-list .sub-box{
@@ -540,6 +543,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: row;
     gap: 5.44rem;
 }
 
@@ -623,4 +627,42 @@ iframe{
     margin-left: 8px;
     display: flex;
     gap: 2rem;
+}
+
+.burger-icon{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+}
+
+.mobile-container{
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+
+.mobile-menu{
+    display: flex;
+    gap: 1rem;
+}
+
+@media(max-width: 875px){
+    .footer-content{
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 790px){
+    .header-container{
+        display: none;
+    }
+
+    .mobile-container{
+        display: flex;
+    }
+}
+
+@media(max-width: 375px){
+
 }
