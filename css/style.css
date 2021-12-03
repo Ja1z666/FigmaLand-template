@@ -295,6 +295,8 @@ h3{
 .info-button{
     padding-top: 36px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 0.8rem;
 }
 
@@ -350,6 +352,8 @@ h3{
 .businesse-button{
     padding-top: 36px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 0.8rem;
 }
 
@@ -663,6 +667,15 @@ iframe{
     }
 }
 
+@media(max-width: 445px){
+    .advantage-list .title{
+        width: 235px;
+    }
+
+    .advantage-list .description{
+        width: 235px;
+    }
+}
 @media(max-width: 375px){
 
 }
